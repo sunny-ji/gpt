@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Franklin Diary</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  #calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+  #calendar div { padding: 8px; border: 1px solid #ccc; text-align: center; cursor: pointer; }
+  #calendar div.has-entry { background-color: #ffd; font-weight: bold; }
+  textarea { width: 100%; height: 100px; }
+</style>
+</head>
+<body>
+<h1>Franklin Diary</h1>
+<div id="calendar"></div>
+<div id="entry" style="display:none;">
+  <h3 id="entry-date"></h3>
+  <textarea id="entry-text"></textarea><br>
+  <button id="save-btn">Save</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
